@@ -13,15 +13,14 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use Hyperf\HttpServer\Annotation\AutoController;
-use Hyperf\View\RenderInterface;
 
 /**
  * @AutoController
  */
 class IndexController extends AbstractController
 {
-    public function index(RenderInterface $view)
+    public function index()
     {
-        return $view->render('index', ['name' => 'Hyperf']);
+        return "Default-Index";
     }
 }
