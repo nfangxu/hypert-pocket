@@ -12,16 +12,16 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
+use Hyperf\HttpServer\Annotation\AutoController;
+use Hyperf\View\RenderInterface;
+
+/**
+ * @AutoController
+ */
 class IndexController extends AbstractController
 {
-    public function index()
+    public function index(RenderInterface $view)
     {
-        $user = $this->request->input('user', 'Hyperf');
-        $method = $this->request->getMethod();
-
-        return [
-            'method' => $method,
-            'message' => "Hello {$user}.",
-        ];
+        return $view->render('index', ['name' => 'Hyperf']);
     }
 }
