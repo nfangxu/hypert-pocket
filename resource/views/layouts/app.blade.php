@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>{{$title ?? 'Hyperf'}}</title>
-    <link rel="stylesheet" href="https://www.layuicdn.com/layui-v2.5.5/css/layui.css">
+    <link rel="stylesheet" href="https://ali-static.oss-cn-beijing.aliyuncs.com/layui/v2.4.5/css/layui.css">
     @yield('style')
     <style>
         .header {
@@ -78,6 +78,9 @@
             <li class="layui-nav-item">
                 <a href="/note/index">闲言碎语</a>
             </li>
+            <li class="layui-nav-item">
+                <a href="/chat/index">聊天室</a>
+            </li>
         </ul>
     </div>
     <div class="layui-container" style="margin-top: 10px;min-height: 1000px">
@@ -87,7 +90,7 @@
         <span>京ICP-1234567890</span>
     </div>
 </div>
-<script src="https://www.layuicdn.com/layui-v2.5.5/layui.js"></script>
+<script src="https://ali-static.oss-cn-beijing.aliyuncs.com/layui/v2.4.5/layui.js"></script>
 <script>
     layui.use(['element'], function () {
         //
