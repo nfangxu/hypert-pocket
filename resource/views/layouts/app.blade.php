@@ -76,7 +76,7 @@
                 <a href="/pocket/index">记账本</a>
             </li>
             <li class="layui-nav-item">
-                <a href="/note/index">记事本</a>
+                <a href="/note/index">闲言碎语</a>
             </li>
         </ul>
     </div>
